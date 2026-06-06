@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="welcome-section">
+            <h1 id="welcome" class="welcome-text"></h1>
+        </div>
+        <section class="search-section">
+            <form action="https://www.google.com/search" method="GET" class="search-form">
+                <input 
+                    type="text" 
+                    name="q" 
+                    id="search-input"
+                    class="search-field" 
+                    placeholder="Search Google..." 
+                    autocomplete="off"
+                    autofocus
+                >
+            </form>
+        </section>
+        <nav class="links-grid">
+            <a href="https://github.com" class="link-card github">GitHub</a>
+            <a href="https://youtube.com" class="link-card youtube">YouTube</a>
+            <a href="https://soundcloud.com" class="link-card soundcloud">SoundCloud</a>
+            <a href="https://gemini.google.com" class="link-card gemini">Gemini</a>
+            <a href="https://aistudio.google.com" class="link-card aistudio">AI Studio</a>
+            <a href="https://claude.ai" class="link-card claude">Claude</a>
+        </nav>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
