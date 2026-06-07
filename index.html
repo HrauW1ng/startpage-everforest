@@ -5,32 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startpage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <div class="bg-overlay"></div>
+
     <main class="container">
-        <div class="welcome-section">
+        <header class="header-section">
+            <div id="clock" class="clock">00:00</div>
+            <div id="date" class="date">Sunday, 01 January</div>
             <h1 id="welcome" class="welcome-text"></h1>
-        </div>
+        </header>
+
         <section class="search-section">
-            <form action="https://www.google.com/search" method="GET" class="search-form">
-                <input 
-                    type="text" 
-                    name="q" 
-                    id="search-input"
-                    class="search-field" 
-                    placeholder="Search Google..." 
-                    autocomplete="off"
-                    autofocus
-                >
+            <form action="https://www.google.com/search" method="GET" id="search-form" class="search-form">
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input 
+                        type="text" 
+                        name="q" 
+                        id="search-input"
+                        class="search-field" 
+                        placeholder="Search Google..." 
+                        autocomplete="off"
+                        autofocus
+                    >
+                </div>
             </form>
         </section>
+
         <nav class="links-grid">
-            <a href="https://github.com" class="link-card github">GitHub</a>
-            <a href="https://youtube.com" class="link-card youtube">YouTube</a>
-            <a href="https://soundcloud.com" class="link-card soundcloud">SoundCloud</a>
-            <a href="https://gemini.google.com" class="link-card gemini">Gemini</a>
-            <a href="https://aistudio.google.com" class="link-card aistudio">AI Studio</a>
-            <a href="https://claude.ai" class="link-card claude">Claude</a>
+            <a href="https://github.com" class="link-card github"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://youtube.com" class="link-card youtube"><i class="fab fa-youtube"></i> YouTube</a>
+            <a href="https://soundcloud.com" class="link-card soundcloud"><i class="fab fa-soundcloud"></i> SoundCloud</a>
+            <a href="https://gemini.google.com" class="link-card gemini"><i class="fas fa-wand-magic-sparkles"></i> Gemini</a>
+            <a href="https://aistudio.google.com" class="link-card aistudio"><i class="fas fa-microchip"></i> AI Studio</a>
+            <a href="https://claude.ai" class="link-card claude"><i class="fas fa-brain"></i> Claude</a>
         </nav>
     </main>
     <script src="script.js"></script>
